@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapita-Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Latar belakang gradien animasi */
+            color:rgb(0,44,94, green, blue);
+            background: linear-gradient(45deg, #b94549, #24516b, #eed3e6);
+            background-size: 400% 400%;
+            animation: gradient-animation 5s infinite ease-in-out;
+
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        span{
+            font-weight: bold;
+        }
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-7xl mx-auto space-y-8 ">
+        <!-- Header Section -->
+        <header class="flex flex-col sm:flex-row justify-between items-center bg-white p-4 sm:p-6 rounded-xl shadow-lg bg-opacity-60">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">Zaki Ahmad Basyary</h1>
+            <nav class="mt-4 sm:mt-0">
+                <ul class="flex space-x-4 text-gray-600">
+                    <li><a href="#kapita-section" class="hover:text-gray-900 transition-colors">Kapita</a></li>
+                    <li><a href="#personal-analysis" class="hover:text-gray-900 transition-colors">Analisa</a></li>
+                    <li><a href="#internet-section" class="hover:text-gray-900 transition-colors">Internet</a></li>
+                    <li><a href="#opensource-section" class="hover:text-gray-900 transition-colors">Opensource</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Profile Section -->
+        <section class="flex flex-col md:flex-row items-center gap-8 bg-white p-6 sm:p-8 rounded-xl shadow-lg bg-opacity-60">
+            <!-- Foto Placeholder -->
+            <div class="w-full md:w-1/3 flex-shrink-0 aspect-w-1 aspect-h-1 rounded-xl flex items-center justify-center">
+                <img src="zaki.jpeg" alt="">
+            </div>
+            <!-- Welcome Message -->
+            <div class="flex-grow">
+                <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-4">Hallo, Saya Zaki Ahmad Basyary</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Mahasiswa <span>Teknik Informatika</span> yang tertarik pada pengembangan web, data science, dan solusi sosial berbasis teknologi. 
+                </p>
+                <p class="text-gray-600 leading-relaxed mt-2">
+                    Di halaman ini saya mendokumentasikan tugas kuliah saya pada mata Kuliah  <span>Kapita Selekta</span> yaitu membuat analisa diri untuk sukses skripsi.
+                </p>
+            </div>
+        </section>
+
+        <!-- Two-Column Content Section -->
+        <section class="grid grid-cols-1 md:grid-cols-1 gap-8 " id="kapita-section">
+            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg bg-opacity-60">
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Konsep Dasar Kapita Selekta</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Konsep dasar kapita selekta adalah pemilihan topik-topik penting dan esensial dari suatu bidang ilmu atau disiplin untuk dibahas secara mendalam, seperti kumpulan karangan atau bunga rampai tentang isu-isu kunci yang perlu mendapatkan perhatian khusus guna meningkatkan pemahaman dan solusi terhadap masalah yang dihadapi
+                </p>
+                <h3 class="font-bold mb-4">Karakteristik Kapita Selekta</h3>
+                <ul class="list-disc pl-6 text-gray-700 leading-relaxed">
+                <li>
+                    <strong>Pemilihan Topik:</strong> Fokus pada isu-isu atau masalah-masalah utama yang dianggap penting dan memiliki pengaruh signifikan dalam suatu bidang.
+                </li>
+                <li>
+                    <strong>Kumpulan Karangan:</strong> Bersifat kumpulan tulisan atau pembahasan yang masing-masing menguraikan suatu persoalan tertentu sebagai bagian dari satu ilmu pengetahuan.
+                </li>
+                <li>
+                    <strong>Pembahasan Mendalam:</strong> Setiap topik yang dipilih akan dibahas secara lebih mendalam untuk mencari penyebab dan solusinya, serta mengembangkan wawasan yang komprehensif.
+                </li>
+                <li>
+                    <strong>Relevansi Kontemporer:</strong> Sering kali mengangkat topik-topik yang aktual dan relevan dengan perkembangan terkini dalam bidang tersebut, seperti dalam konteks pendidikan atau hukum.
+                </li>
+            </ul>
+            </div>
+            
+        </section>
+
+
+        <!-- Personal Analysis Section -->
+        <section class="bg-white p-6 sm:p-8 rounded-xl shadow-lg bg-opacity-60" id="personal-analysis">
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">Analisa Pribadi</h3>
+            <div class="flex flex-col sm:flex-row gap-8 mt-6">
+                <!-- Gambar 1 Placeholder -->
+                <div class="w-full sm:w-1/2  aspect-w-4 aspect-h-3 rounded-xl flex items-center justify-center ">
+                    <img src="SWOT dan porter Kapita Selekta.png" alt="">
+                </div>
+                <!-- Gambar 2 Placeholder -->
+                <div class="w-full sm:w-1/2  aspect-w-4 aspect-h-3 rounded-xl flex items-center justify-center ">
+                    <img src="porter Kapita Selekta.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Internet Usage Priority Section -->
+        <section class="bg-white p-6 sm:p-8 rounded-xl shadow-lg bg-opacity-60" id="internet-section">
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-5">Prioritas Penggunaan Internet</h3>
+            <p>Dalam buku <strong>The World is Flat karya Thomas L. Friedman</strong>, dijelaskan ada 10 kekuatan yang membuat dunia menjadi “datar” atau setara, salah satunya adalah internet yang memungkinkan siapa pun terhubung tanpa batas ruang dan waktu. Prioritas penggunaan internet dapat difokuskan pada beberapa hal utama:</p>
+            <ul class="list-disc pl-6 text-gray-700 leading-relaxed">
+                <li>
+                    <strong>Akses Informasi (In-forming)</strong> internet menjadi sumber utama pengetahuan, melalui mesin pencari, e-library, maupun jurnal online.
+                </li>
+                <li>
+                    <strong>Kolaborasi Global (Open-sourcing & Uploading)</strong> memudahkan individu untuk bekerja sama dalam proyek bersama, berbagi ide, dan membangun inovasi.
+                </li>
+                <li>
+                    <strong>Komunikasi & Jaringan Sosial</strong> memungkinkan interaksi cepat melalui email, video conference, maupun media sosial untuk kerja maupun personal.
+                </li>
+                <li>
+                    <strong>Edukasi & Pengembangan Diri</strong>nternet digunakan untuk kursus online, tutorial, dan pembelajaran mandiri.nternet digunakan untuk kursus online, tutorial, dan pembelajaran mandiri.
+                </li>
+                <li><strong>Produktivitas & Efisiensi Kerja (Outsourcing, Offshoring, Supply-chaining)</strong>mendukung kerja jarak jauh, manajemen rantai pasok, hingga efisiensi bisnis.</li>
+            </ul>
+            <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
+                Dengan prioritas tersebut, internet menjadi alat utama untuk meningkatkan wawasan, memperluas jejaring, serta meningkatkan efisiensi dalam kehidupan akademik maupun profesional.
+                </blockquote>
+        </section>
+
+        <!-- Open Source Philosophy Section -->
+        <section class="bg-white p-6 sm:p-8 rounded-xl shadow-lg bg-opacity-60" id="opensource-section">
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-5">Pemahaman Filosofi Open Source</h3>
+            <p>Filosofi open source menekankan prinsip transparansi, kolaborasi, akses terbuka, serta semangat berbagi pengetahuan. Semua orang bisa melihat, memodifikasi, dan mengembangkan suatu perangkat lunak atau karya tanpa ada monopoli. Filosofi ini sangat relevan dengan penggunaan internet, karena keduanya bertumpu pada keterbukaan dan kolaborasi global.</p>
+            <p>Bagi saya, prioritas dalam memanfaatkan internet berdasarkan filosofi open source adalah:</p>
+            <ul class="list-disc pl-6 text-gray-700 leading-relaxed">
+                <li><strong>Belajar dan Berbagi</strong> saya memanfaatkan software open source seperti Linux dan Python untuk belajar pemrograman, serta ikut berdiskusi di forum online.</li>
+                <li><strong>Kolaborasi</strong> menggunakan platform open source seperti GitHub untuk bekerja sama dalam proyek, sehingga bisa berkembang bersama komunitas.</li>
+                <li><strong>Akses Pengetahuan Gratis</strong> saya lebih memilih sumber daya yang terbuka dan gratis seperti jurnal open access dan tutorial open source agar tidak terhambat biaya.</li>
+                <li><strong>Etika Digital</strong> lebih memilih menggunakan software open source daripada software bajakan, karena lebih etis sekaligus mendukung komunitas pengembang.</li>
+            </ul>
+            <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
+                Dengan demikian, prioritas saya adalah menjadikan internet sebagai sarana belajar, kolaborasi, dan kontribusi di ekosistem open source agar teknologi bisa berkembang lebih cepat, terbuka, dan bermanfaat bagi banyak orang.
+            </blockquote>
+        </section>
+    </div>
+    <footer class="text-center py-3 ">
+        <div >
+            <small style="color: azure;">&copy; <span id="year"></span> Zaki Ahmad Basyary — Mahasiswa Teknik Informatika</small>
+        </div>
+    </footer>
+</body>
+</html>
